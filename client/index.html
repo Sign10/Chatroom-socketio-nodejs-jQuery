@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatroom</title>
+    <link rel="stylesheet" href="css/hello.css">
+</head>
+<body style="display: none;">
+    <!-- 登录窗口，登录后自动隐藏 -->
+    <div class="login_box" style="display: block;">
+        <div class="login_box2">
+            <div class="title">
+                <h3>LOGIN IN</h3>
+            </div>
+            <div class="msgbox">
+                <div class="LoginUser">
+                    <p class="name">Name：</p>
+                    <input type="text" placeholder="Please input the username" id="username">
+                </div>
+                <div class="avatarAll">
+                    <p class="avatarName">Avatar：</p>
+                    <ul class="Loginavatar" id="login_avatar">
+                        <li><img src="images/avatar01.jpg" alt=""></li>
+                        <li> <img src="images/avatar02.jpg" alt=""></li>
+                        <li><img src="images/avatar03.jpg" alt=""></li>
+                        <li><img src="images/avatar04.jpg" alt=""></li>
+                        <li><img src="images/avatar05.jpg" alt=""></li>
+                        <li><img src="images/avatar06.jpg" alt=""></li>
+                        <li><img src="images/avatar07.jpg" alt=""></li>
+                        <li><img src="images/avatar08.jpg" alt=""></li>
+                        <li><img src="images/avatar09.jpg" alt=""></li>
+                        <li><img src="images/avatar10.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <button class="weui-btn" id="loginBtn">LOGIN IN</button>
+            </div>
+        </div>
+    </div>
+    <!-- 聊天室 -->
+    <div class="container" style="display: none;">
+        <!-- 用户列表 -->
+        <div class="user-list">
+            <!-- 自己的信息 -->
+            <div class="header">
+                <div class="avatar22">
+                    <img class="img avatar_url" src="images/avatar02.jpg" alt="" />
+                </div>
+                <div class="info">
+                    <h3 class="username">Name</h3>
+                </div>
+            </div>
+            <!-- 已登录的用户信息 -->
+            <div class="title">
+                <h3>用户列表</h3>
+            </div>
+            <div class="List">
+                <ul class="list">
+                </ul>
+            </div>
+        </div>
+        <!-- 聊天框 -->
+        <div class="box">
+            <div class="box-hd">
+                <h3>聊天室(<span id="userCount">99</span>)</h3>
+            </div>
+            <!-- 系统信息处 -->
+            <div class='box-sys'>
+            </div>
+            <!-- 聊天内容 -->
+            <div class="box-bd">
+            </div>
+            <!-- 消息发生处 -->
+            <div class="box-ft">
+                <!-- <div class="toolbar">
+                        <a href="javascript:;" title="表情" class="face"></a>
+                        <a href="javascript:;" title="截屏" class="screen-out"></a>
+                        <a href="javascript:;" title="图片" class="file">
+                            <label for="file"></label>
+                            <input type="file" id="file" style="display: none;">
+                        </a>
+                    </div> -->
+                <div class="content">
+                    <textarea class="text" id="content" contenteditable></textarea>
+                </div>
+                <div class="action">
+                    <a class="btn-send" href="javascript:;" id="btn-send">发送</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 引入socketio -->
+</body>
+<script type="text/javascript" src="https://cdn.socket.io/3.1.2/socket.io.js"></script>
+<script src="js/jquery-3.6.3.js"></script>
+<script src="js/index.js"></script>
+<script src="js/rem.js"> </script>
+</html>
