@@ -15,6 +15,6 @@
 
 ## 建议&意见
 代码由本人自学编写，因此可能会出现代码书写不规范或冗余的情况，还请各位不吝赐教，能够为我提出宝贵的建议。   
-mail: sign10@163.com   <br/>blog: signten.cn  <br/>
+mail: sign10@163.com   <br/>blog: https://signten.cn/  <br/>
 
 项目演示地址: https://chat.signten.cn/
